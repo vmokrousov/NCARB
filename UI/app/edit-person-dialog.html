@@ -1,0 +1,29 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title">Edit Person</h4>
+      </div>
+      <div class="modal-body">
+		<form ng-submit="pc.update(person)" ng-controller='PersonController as pc'>
+			<div class="form-group">
+			  <label>First Name:</label>
+			  <input ng-model="person.firstName" class="form-control">
+			  <label>Last Name:</label>
+			  <input ng-model="person.lastName" class="form-control">
+			  <label>Job Title:</label>
+			  <input ng-model="person.jobTitle" class="form-control">
+			</div>
+			<div class="modal-footer">		
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<input type="submit"  class="btn btn-primary" value="Save changes">
+			</div>
+		</form>
+      </div>
+      
+    </div>
+  </div>
+</div>
